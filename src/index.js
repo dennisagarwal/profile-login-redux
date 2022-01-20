@@ -5,11 +5,12 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "./features/user";
+import themeReducer from "./features/theme";
 
-//configure store carries carries current values of different elements in the component
 const store = configureStore({
   reducer: {
-    user:userReducer,
+    user: userReducer,
+    theme: themeReducer,
   },
 });
 
